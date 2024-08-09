@@ -22,13 +22,13 @@ The purpose of this study is to investigate three concerning ophthalmic complica
 
 ## Study Design/Data Source(s)
 
-This will be a retrospective cohort study employing an active comparator, new-user cohort design, comparing the risk of NAION and DR worsening among adults with types 2 diabetes mellitus exposed to semaglutide compared with other GLP-1 RA medications and non-GLP-1 RA anti-diabetic medications. Other GLP-1 RA medications will include dulaglutide  and exenatide. Non-GLP-1 RA comparators will include other second-line treatments for diabetes including empagliflozin (a SGLT2 inhibitor), sitagliptin (a DPP4 inhibitor), and glipizide (a sulfonylurea). These comparators were chosen based on the most commonly occurring medication within those classes from the LEGEND-T2DM study. (https://ohdsi-studies.github.io/LegendT2dm/Protocol)
+This will be a retrospective cohort study employing an active comparator, new-user cohort design, comparing the risk of NAION and DR worsening among adults with types 2 diabetes mellitus exposed to semaglutide compared with other GLP-1 RA medications and non-GLP-1 RA anti-diabetic medications. Other GLP-1 RA medications will include dulaglutide and exenatide. Non-GLP-1 RA comparators will include other second-line treatments for diabetes including empagliflozin (a SGLT2 inhibitor), sitagliptin (a DPP4 inhibitor), and glipizide (a sulfonylurea). These comparators were chosen based on the most commonly occurring medication within those classes from the LEGEND-T2DM study. (https://ohdsi-studies.github.io/LegendT2dm/Protocol)
 
 ## Study Population
 
 We will include all adults (≥ 18 years) with type 2 diabetes mellitus in each data source who meet the cohort entry criteria for each exposure cohort (detailed below).
 
-## Exposures
+## Exposures {#exposures}
 The exposure is receipt of semaglutide (GLP-1 RA), dulaglutide (GLP-1RA), exenatide (GLP-1 RA), empagliflozin (a SGLT2 inhibitor), sitagliptin (a DPP4 inhibitor), or glipizide (a sulfonylurea) based on the definitions of LEGEND-T2DM. (https://ohdsi-studies.github.io/LegendT2dm/Protocol) In brief, these will include patients with T2DM with prior metformin monotherapy who initiate treatment with one of the four medications. Patients have to have one year of observation prior to the index date, no prior drug exposure to a comparator second-line or anti-diabetic agents, and at most 30 days of insulin exposure before the index date.
 
 As a sensitivity analysis, we will examine patients with each of these anti-diabetic medication exposures but without the second-line therapy requirement, meaning that they can be on another anti-diabetic medication at the time of cohort entry.
@@ -91,7 +91,7 @@ Although the primary aim of this study is a comparative safety study, various st
 
 ### Cohort Diagnostics
 
-The R package CohortDiagnostics will be executed for all target, comparator, indication, and outcome cohorts to evaluate measurement error in the phenotype development and evaluation process.
+The R package CohortDiagnostics will be executed for all target, comparator, indication, and outcome cohorts to evaluate measurement error in the phenotype development and evaluation process.[@rao_cohortdiagnostics_2023]
 
 ### Cohort Features
 
@@ -117,7 +117,7 @@ The CohortMethod and Cyclops packages in Hades will be used.14 Large-scale prope
 
 ### Self-Controlled Case Series
 
-The SelfControlledCaseSeries and Cyclops packages in Hades will be used to estimate the relative incidence of NAION or DR progression using a self-controlled case-series design.14 Diagnostics will be run to evaluate whether this was an appropriate analysis.
+The SelfControlledCaseSeries and Cyclops packages in Hades will be used to estimate the relative incidence of NAION or DR progression using a self-controlled case-series design.[@schuemie_health-analytics_2024] Diagnostics will be run to evaluate whether this was an appropriate analysis.
 
 # Study Diagnostics
 
